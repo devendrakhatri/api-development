@@ -1,7 +1,7 @@
 # REST API mini project
 
 This projects gets book information from external [Ice & Fire API](https://anapioficeandfire.com/Documentation#books).\
-It also provides APIs for CRUD operations of a book, baked by an in-memory database.
+It also provides APIs for CRUD operations of a book - baked by an in-memory database.
 
 ### Technology stack
 * Java-8
@@ -9,7 +9,7 @@ It also provides APIs for CRUD operations of a book, baked by an in-memory datab
 * Spring JPA for database operations
 * In-memory H2 database
 
-### Design discussion
+### Design detail
 * Adhere to SOLID design principles.
 * Uses design patterns like:
     * Gateway
@@ -48,6 +48,14 @@ spring.datasource.password=sa
 
 ```
 
+### Run on Mac / Linux
+
+```console
+$ cd adeva/bin
+$ sh startServer.sh
+```
+
+
 ### Run on Windows
 
 ```console
@@ -55,7 +63,7 @@ spring.datasource.password=sa
 > startServer.bat
 ```
 
-### Run using Maven after making changes
+### Run using Maven after making code/config changes
 
 ```console
 mvn spring-boot:run
